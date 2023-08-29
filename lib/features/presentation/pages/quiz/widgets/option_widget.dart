@@ -4,7 +4,11 @@ import 'package:multiple_choice/core/util/constants/colors.dart';
 class Option extends StatelessWidget {
   const Option({
     super.key,
+    required this.index,
+    required this.question,
   });
+  final int index;
+  final String question;
 
   @override
   Widget build(BuildContext context) {
@@ -13,13 +17,17 @@ class Option extends StatelessWidget {
       padding: const EdgeInsets.symmetric(
           horizontal: kDefaultPadding, vertical: kDefaultPadding / 2),
       decoration: BoxDecoration(
-          border: Border.all(), borderRadius: BorderRadius.circular(16)),
+          border: Border.all(color: kGrayColor),
+          borderRadius: BorderRadius.circular(16)),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
-            '1. Testttt',
-            style: Theme.of(context).textTheme.titleMedium,
+            '${index + 1}. $question',
+            style: Theme.of(context)
+                .textTheme
+                .titleMedium
+                ?.copyWith(color: kGrayColor),
           ),
           Container(
             height: 20,

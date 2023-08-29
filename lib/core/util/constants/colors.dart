@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+const kBackgroundColor = Color(0xFF000000);
 const kSecondaryColor = Color(0xFF8B94BC);
 const kGreenColor = Color(0xFF6AC259);
 const kRedColor = Color(0xFFE92E30);
@@ -10,6 +11,8 @@ const kPrimaryGradient = LinearGradient(
   begin: Alignment.centerLeft,
   end: Alignment.centerRight,
 );
+const kBackgroundGradient =
+    LinearGradient(colors: [Color(0xFF1DA1F2), Color(0xFF4A658E)]);
 
 const double kDefaultPadding = 20.0;
 

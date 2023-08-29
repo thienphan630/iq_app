@@ -6,12 +6,16 @@ import 'package:multiple_choice/features/presentation/pages/quiz/widgets/option_
 class QuestionCard extends StatelessWidget {
   const QuestionCard({
     super.key,
+    required this.questionIndex,
   });
+  final int questionIndex;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(kDefaultPadding),
+      margin: const EdgeInsets.symmetric(
+          horizontal: kDefaultPadding / 2, vertical: kDefaultPadding),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(25),
@@ -19,13 +23,19 @@ class QuestionCard extends StatelessWidget {
       child: Column(
         children: [
           Text(
-            sampleData[0]['question'],
+            sampleData[questionIndex]['question'],
             style: Theme.of(context).textTheme.titleLarge,
           ),
-          const Option(),
-          const Option(),
-          const Option(),
-          const Option(),
+          Expanded(
+            child: ListView.builder(
+                itemCount: sampleData[questionIndex]['options'].length,
+                itemBuilder: (context, index) {
+                  return Option(
+                    index: index,
+                    question: sampleData[questionIndex]['options'][index],
+                  );
+                }),
+          ),
         ],
       ),
     );
