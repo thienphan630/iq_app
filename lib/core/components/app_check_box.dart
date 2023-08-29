@@ -1,4 +1,4 @@
-import 'package:clean_architecture/core/util/constants/colors.dart';
+import 'package:multiple_choice/core/util/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class AppCheckBox extends StatelessWidget {

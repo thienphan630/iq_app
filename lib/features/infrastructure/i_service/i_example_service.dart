@@ -1,4 +1,4 @@
-import 'package:clean_architecture/features/infrastructure/models/account_model.dart';
+import 'package:multiple_choice/features/infrastructure/models/account_model.dart';
 
 abstract class IExampleService {
   Future<dynamic> onLogin({String name, String password});

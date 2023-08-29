@@ -1,7 +1,7 @@
-import 'package:clean_architecture/core/components/base/app_get_controller_base.dart';
-import 'package:clean_architecture/core/data/datasources/local_storage.dart';
-import 'package:clean_architecture/features/infrastructure/i_repositories/i_example_repository.dart';
-import 'package:clean_architecture/features/presentation/pages/login/login_screen.dart';
+import 'package:multiple_choice/core/components/base/app_get_controller_base.dart';
+import 'package:multiple_choice/core/data/datasources/local_storage.dart';
+import 'package:multiple_choice/features/infrastructure/i_repositories/i_example_repository.dart';
+import 'package:multiple_choice/features/presentation/pages/login/login_screen.dart';
 import 'package:get/get.dart';
 
 import '../pages/main_page.dart';

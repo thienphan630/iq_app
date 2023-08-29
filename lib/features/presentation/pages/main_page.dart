@@ -1,6 +1,6 @@
-import 'package:clean_architecture/core/util/constants/colors.dart';
-import 'package:clean_architecture/features/presentation/controllers/example_controller.dart';
-import 'package:clean_architecture/features/presentation/pages/quiz/quiz_screen.dart';
+import 'package:multiple_choice/core/util/constants/colors.dart';
+import 'package:multiple_choice/features/presentation/controllers/example_controller.dart';
+import 'package:multiple_choice/features/presentation/pages/quiz/quiz_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

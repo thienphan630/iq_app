@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:clean_architecture/core/data/datasources/local_storage.dart';
+import 'package:multiple_choice/core/data/datasources/local_storage.dart';
 import 'package:dio/adapter.dart';
 import 'package:dio/dio.dart';
 

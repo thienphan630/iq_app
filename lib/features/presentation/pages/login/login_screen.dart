@@ -1,8 +1,8 @@
-import 'package:clean_architecture/core/components/app_button.dart';
-import 'package:clean_architecture/core/components/app_text_field.dart';
-import 'package:clean_architecture/core/components/base/app_status_base_screen.dart';
-import 'package:clean_architecture/core/util/constants/colors.dart';
-import 'package:clean_architecture/features/presentation/controllers/example_controller.dart';
+import 'package:multiple_choice/core/components/app_button.dart';
+import 'package:multiple_choice/core/components/app_text_field.dart';
+import 'package:multiple_choice/core/components/base/app_status_base_screen.dart';
+import 'package:multiple_choice/core/util/constants/colors.dart';
+import 'package:multiple_choice/features/presentation/controllers/example_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

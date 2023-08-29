@@ -1,4 +1,4 @@
-package com.example.clean_architecture
+package com.example.multiple_choice
 
 import io.flutter.embedding.android.FlutterActivity
 

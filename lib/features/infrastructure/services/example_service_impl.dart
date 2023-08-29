@@ -1,5 +1,5 @@
-import 'package:clean_architecture/core/error/failures.dart';
-import 'package:clean_architecture/features/infrastructure/i_service/i_example_service.dart';
+import 'package:multiple_choice/core/error/failures.dart';
+import 'package:multiple_choice/features/infrastructure/i_service/i_example_service.dart';
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 
