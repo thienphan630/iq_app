@@ -26,10 +26,10 @@ class ProcessBar extends StatelessWidget {
                     alignment: Alignment.centerLeft,
                     child: Container(
                       width: constraints.maxWidth * controller.animation.value,
-                      height: controller.animation.value < 0.08
+                      height: controller.animation.value < 0.1
                           ? constraints.maxHeight *
                               controller.animation.value *
-                              12
+                              13
                           : constraints.maxHeight,
                       decoration: BoxDecoration(
                           gradient: kPrimaryGradient,

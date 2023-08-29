@@ -10,9 +10,8 @@ class QuestionController extends AppGetxControllerBase
   @override
   void onInit() {
     super.onInit();
-
     _animationController =
-        AnimationController(vsync: this, duration: const Duration(seconds: 30));
+        AnimationController(vsync: this, duration: const Duration(seconds: 10));
     _animation = Tween(begin: 0.0, end: 1.0).animate(_animationController)
       ..addListener(() {
         update();
@@ -22,7 +21,7 @@ class QuestionController extends AppGetxControllerBase
 
   void nextQuestion() {
     _animationController.reset();
-    _animationController.forward().whenComplete(nextQuestion);
+    // _animationController.forward().whenComplete(nextQuestion);
   }
 
   @override
