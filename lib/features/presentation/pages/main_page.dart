@@ -1,6 +1,8 @@
 import 'package:clean_architecture/core/util/constants/colors.dart';
 import 'package:clean_architecture/features/presentation/controllers/example_controller.dart';
+import 'package:clean_architecture/features/presentation/pages/quiz/quiz_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -14,10 +16,15 @@ class _MainPageState extends State<MainPage> {
 
   int _selectedIndex = 0;
   final _widgetOptions = [
-    const Center(
-      child: Text(
-        'Home',
-        style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+    Center(
+      child: TextButton(
+        onPressed: () {
+          Get.to(() => const QuizScreen());
+        },
+        child: const Text(
+          'Bắt đầu',
+          style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+        ),
       ),
     ),
     const Center(
